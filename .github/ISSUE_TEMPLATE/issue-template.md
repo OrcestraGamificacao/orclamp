@@ -22,9 +22,6 @@ Todas as atividades a serem realizadas devem estar elencadas em tópicos e ao se
 - [ ] Task 2
 - [ ] Task 3
 
-## Imagem e Link da Tela
-Adicionar a imagem e o link da tela para facilitar o trabalho de quem for desenvolver.
-
 ## Labels
 A issue deve ser marcada com uma ou mais tags adequadas, para fins de rastreamento do projeto.
 
