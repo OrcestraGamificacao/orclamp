@@ -1,3 +1,6 @@
+  ![Logo](https://user-images.githubusercontent.com/37190005/76413416-26691b00-6374-11ea-8aff-04508b2b53fa.png)
+
+
 # Sobre o projeto
 Repositório para criação da versão beta do aplicativo do CodeCamp
 # Padrão de Commits
