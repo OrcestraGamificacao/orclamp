@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { Image, View, Text } from 'react-native';
+import { Button, Input } from 'react-native-elements';
 
 import styles from './styles';
 
@@ -10,8 +11,29 @@ function Register() {
           <Image source={require('../../../assets/Logo.png')} />
         </View>
         <View style={styles.container_text}>
-          <Text style={styles.text}>Bem-Vindo!</Text>
+          <Text style={styles.welcome}>
+            Bem-Vindo!
+            </Text>
+          <Text style={styles.text}>
+            Crie sua conta para começar. Depois disso, você pode criar ou entrar para projetos.
+            </Text>
+          <Text style={styles.input_title}> Email </Text>
+          <Input containerStyle={styles.input}
+            placeholder="a@a.com"
+          />
+          <Text style={styles.input_title}> Password </Text>
+          <Input containerStyle={styles.input}
+            placeholder="********"
+          />
+          <Text style={styles.input_title}> Confirm Password </Text>
+          <Input containerStyle={styles.input}
+            placeholder="********"
+          />
+          <Button containerStyle={styles.button_register}
+            title='Teste'
+          />
         </View>
+        
     </View>
   );
 }

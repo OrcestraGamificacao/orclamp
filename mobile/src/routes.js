@@ -5,7 +5,7 @@ import Register from './pages/Register';
 
 const Routes = () => (
   <NavigationContainer>
-    <Main />
+    <Register />
   </NavigationContainer>
 );
 
