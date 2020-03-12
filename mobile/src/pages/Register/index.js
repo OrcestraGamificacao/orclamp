@@ -17,9 +17,9 @@ function Register() {
           <Text style={styles.text}>
             Crie sua conta para começar. Depois disso, você pode criar ou entrar para projetos.
             </Text>
-          <Text style={styles.input_title}> Email </Text>
+          <Text style={styles.input_title}> GitHub Username </Text>
           <Input containerStyle={styles.input}
-            placeholder="a@a.com"
+            placeholder="GitHub Username"
           />
           <Text style={styles.input_title}> Password </Text>
           <Input containerStyle={styles.input}
@@ -32,11 +32,10 @@ function Register() {
           <Button containerStyle={styles.button_register}
             buttonStyle={styles.button_register}
             title='SIGN UP'
-            color='#7AC14E'
           />
           <Text> Já tem uma conta? Login</Text>
         </View>
-        
+
     </View>
   );
 }
