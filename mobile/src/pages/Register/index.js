@@ -30,8 +30,11 @@ function Register() {
             placeholder="********"
           />
           <Button containerStyle={styles.button_register}
-            title='Teste'
+            buttonStyle={styles.button_register}
+            title='SIGN UP'
+            color='#7AC14E'
           />
+          <Text> Já tem uma conta? Login</Text>
         </View>
         
     </View>

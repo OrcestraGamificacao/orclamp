@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#384f7d',
     paddingTop: '5%',
-    paddingBottom: '12%'
+    paddingBottom: '10%'
   },
   input_title: {
     fontSize: 12,
@@ -38,10 +38,13 @@ const styles = StyleSheet.create({
   input: {
     borderRadius: 10,
     width: '90%',
-    paddingBottom: '10%'
+    paddingBottom: '7%%'
   },
   button_register:{
-    width: '80%'
+    width: '80%',
+    backgroundColor: '#7AC14E',
+    alignSelf: "center",
+    borderRadius: 8
   }
 });
 
