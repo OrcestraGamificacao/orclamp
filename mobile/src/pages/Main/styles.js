@@ -24,26 +24,51 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     transform: [{scaleX: 1/2}]
   },
-  searchBar: {
-    top: 190,
-    alignSelf: 'center',
-    height: 40,
-    width: 315,
-    backgroundColor: '#ffffff',
-    borderRadius: 8,
-    transform: [{scaleX: 1/2}],
-    paddingLeft: 40
-  },
   projectList: {
-    alignItems: 'center',
-    top: -30
+    top: -85,
+    flex: 1,
   },
   button: {
     height: 55,
     width: 300,
     backgroundColor: '#7AC14E',
-    borderRadius: 8
-  }
+    borderRadius: 8,
+    bottom: 75,
+    zIndex: 4,
+    shadowOffset: {width: 10, height: 10},
+    shadowColor: 'black',
+    shadowOpacity: .8,
+    letterSpacing: 2
+  },
+  bottomGradient: {
+    height: 300,
+    width: '100%',
+    zIndex: 3,
+    width: 500,
+    marginTop: -300,
+  },
+  projectAvailable: {
+    top: -85,
+    alignSelf: 'flex-start',
+    left: 30,
+    color: 'rgba(56, 79, 125, .8)',
+    fontSize: 13,
+    letterSpacing: 1,
+    lineHeight: 16
+  },
+  searchBar: {
+    top: -100,
+    width: 315,
+    backgroundColor: '#ffffff',
+    borderRadius: 8,
+    paddingVertical: 5,
+  },
+  searchBarText: {
+    marginLeft: 10
+  },
+  searchBarContainer: {
+    borderBottomWidth: 0
+  },
 });
 
 export default styles;

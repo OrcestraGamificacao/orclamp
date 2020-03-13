@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput, ScrollView } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Button } from 'react-native-elements';
+import { Button, Input } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import Project from '../../components/projectCard';
 
 import styles from './styles';
@@ -14,23 +15,20 @@ function Main() {
     {
       projectName: 'Plataforma educacional gamificada',
       ownerName: 'Jason Fried',
-      image: '../../../assets/icon.png',
-      labels: ['Rails', 'Ruby on Rails'],
-      id: 1
+      avatar: '../../../assets/icon.png',
+      labels: ['Rails', 'Ruby on Rails']
     },
     {
       projectName: 'App de academia gamificado',
       ownerName: 'Henri Charriere',
-      image: '../../../assets/icon.png',
-      labels: ['Javascript', 'React Native'],
-      id: 2
+      avatar: '../../../assets/icon.png',
+      labels: ['Javascript', 'React Native']
     },
     {
       projectName: 'Chatbot de monitoramento ',
       ownerName: 'Stephen King',
-      image: '../../../assets/icon.png',
-      labels: ['Rasa', 'Python'],
-      id: 3
+      avatar: '../../../assets/icon.png',
+      labels: ['Rasa', 'Python']
     }
   ];
 
@@ -42,16 +40,31 @@ function Main() {
       colors={['#7AC14E', '#5A8D3B']}
       style={styles.top}>
         <Text style={styles.pageTitle}>Projetos</Text>
-        <TextInput
+      </LinearGradient>
+      <Input
           placeholder={'Procurar projeto'}
           onChangeText={changeSearchText}
-          style={styles.searchBar}
+          value={searchText}
+          containerStyle={styles.searchBar}
+          inputContainerStyle={styles.searchBarContainer}
+          inputStyle={styles.searchBarText}
+          leftIcon={
+            <Icon name='search'
+              size={20}
+              color='rgba(125,125,125, .5)'
+            />
+          }
         />
-      </LinearGradient>
-      <ScrollView contentContainerStyle={styles.projectList}>
-        {mock.map(project => (<Project project={project} />))}
-      </ScrollView>
-      <Button type='solid' title='ADICIONAR PROJETO' raised buttonStyle={styles.button} />
+      <Text style={styles.projectAvailable}>PROJETOS DISPONÍVEIS</Text>
+      <FlatList
+        keyExtractor={(item, index) => index.toString()}
+        data={mock}
+        renderItem={(project) => (<Project project={project}/>)}
+        style={styles.projectList}
+        showsVerticalScrollIndicator={false}
+      />
+      <Button type='solid' title='ADICIONAR PROJETO' buttonStyle={styles.button} />
+      <LinearGradient pointerEvents='none' colors={['#ffffff', 'rgba(255, 255, 255, 0)']} start={[0, .7]} end={[0, 0]} style={styles.bottomGradient} />
     </View>
   );
 }

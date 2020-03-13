@@ -1,26 +1,37 @@
 import React, {useState} from 'react';
-import { View, Image, Text } from 'react-native';
-import { ListItem } from 'react-native-elements'
+import { View, Image, Text, FlatList } from 'react-native';
+import { ListItem, Card } from 'react-native-elements'
 import styles from './styles';
 
-const Label = ({name}) =>
-(
-    <View><Text>{name}</Text></View>
-);
+const Label = ({name}) =>{
+    return (
+        <View style={styles.labelView}><Text style={styles.labelText}>{name.item}</Text></View>
+)};
 
-const Project = ({project}) =>
+const Project = props =>
 {
-    const {projectName, ownerName, image, labels} = project;
+    const project = props.project;
+    const {projectName, ownerName, avatar, labels} = project.item;
 
     return(
-    <ListItem
-        containerStyle={styles.card}
-        title={projectName}
-        subtitle={ownerName}
-        leftAvatar={(
-            <Image style={styles.image} source={require('../../../assets/icon.png')} />
-        )}
-    />
+    <Card containerStyle={styles.card}>
+        <ListItem
+            title={projectName}
+            subtitle={
+                <>
+                <Text style={styles.ownerName}>
+                    {ownerName}
+                </Text>
+                <View style={styles.labelList}>
+                    <FlatList horizontal data={labels} keyExtractor={(item, index) => index.toString()} renderItem={(label) => <Label name={label} />}/>
+                </View>
+                </>
+            }
+            leftAvatar={(
+                <Image style={styles.image} source={require('../../../assets/icon.png')} />
+            )}
+        />
+    </Card>
     );
 };
 
