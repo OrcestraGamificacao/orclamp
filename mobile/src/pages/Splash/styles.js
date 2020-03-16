@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5F7FB',
         width: 200,
         height: 200,
-        transform: [{rotateY: '180deg'}]
     },
     container: {
         backgroundColor: '#F5F7FB',
