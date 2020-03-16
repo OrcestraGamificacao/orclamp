@@ -1,9 +1,15 @@
 import express from 'express';
-// eslint-disable-next-line
 import mongoose from 'mongoose';
 import cors from 'cors';
-
 import routes from './routes';
+
+mongoose.connect(
+  'mongodb+srv://orc:orc666@codecamp-08gxr.mongodb.net/test?retryWrites=true&w=majority',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 const app = express();
 
