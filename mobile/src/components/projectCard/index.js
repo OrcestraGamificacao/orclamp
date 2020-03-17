@@ -16,7 +16,9 @@ const Project = props =>
     return(
     <Card containerStyle={styles.card}>
         <ListItem
-            title={projectName}
+            title={
+            <Text style={styles.projectName}>{projectName}</Text>
+            }
             subtitle={
                 <>
                 <Text style={styles.ownerName}>

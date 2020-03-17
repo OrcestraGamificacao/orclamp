@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Button, Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Project from '../../components/projectCard';
+import Header from '../../components/Header';
 
 import styles from './styles';
 
@@ -36,11 +37,7 @@ function Main() {
 
   return (
     <View style={styles.container}>
-      <LinearGradient
-      colors={['#7AC14E', '#5A8D3B']}
-      style={styles.top}>
-        <Text style={styles.pageTitle}>Projetos</Text>
-      </LinearGradient>
+      <Header title="Projetos"/>
       <Input
           placeholder={'Procurar projeto'}
           onChangeText={changeSearchText}
@@ -56,15 +53,17 @@ function Main() {
           }
         />
       <Text style={styles.projectAvailable}>PROJETOS DISPONÍVEIS</Text>
-      <FlatList
-        keyExtractor={(item, index) => index.toString()}
-        data={mock}
-        renderItem={(project) => (<Project project={project}/>)}
-        style={styles.projectList}
-        showsVerticalScrollIndicator={false}
-      />
-      <Button type='solid' title='ADICIONAR PROJETO' buttonStyle={styles.button} />
-      <LinearGradient pointerEvents='none' colors={['#ffffff', 'rgba(255, 255, 255, 0)']} start={[0, .7]} end={[0, 0]} style={styles.bottomGradient} />
+      <View style={styles.projectHeight}>
+        <FlatList
+          keyExtractor={(item, index) => index.toString()}
+          data={mock}
+          renderItem={(project) => (<Project project={project}/>)}
+          style={styles.projectList}
+          showsVerticalScrollIndicator={false}
+        />
+      </View>
+      <Button type='solid' title='ADICIONAR PROJETO' titleStyle={styles.buttonText} buttonStyle={styles.button} />
+      <LinearGradient pointerEvents='none' colors={['rgba(255, 255, 255, 0)', '#ffffff']} start={[0, 0]} end={[0, .7]} style={styles.bottomGradient} />
     </View>
   );
 }

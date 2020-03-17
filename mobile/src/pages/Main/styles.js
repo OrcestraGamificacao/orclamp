@@ -6,34 +6,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5F7FB'
   },
-  top: {
-    height: 250,
-    width: 300,
-    alignSelf: 'center',
-    top: -75,
-    borderBottomLeftRadius: 1000,
-    borderBottomRightRadius: 1000,
-    transform: [{scaleX: 2}]
-  },
-  pageTitle: {
-    fontSize: 19,
-    color: '#ffffff',
-    lineHeight: 22,
-    fontFamily: 'Roboto',
-    top: 150,
-    alignSelf: 'center',
-    transform: [{scaleX: 1/2}]
-  },
   projectList: {
     top: -85,
     flex: 1,
+  },
+  projectHeight: {
+    height: 325
   },
   button: {
     height: 55,
     width: 300,
     backgroundColor: '#7AC14E',
     borderRadius: 8,
-    bottom: 75,
+    bottom: 80,
     zIndex: 4,
     shadowOffset: {width: 10, height: 10},
     shadowColor: 'black',
@@ -41,11 +26,12 @@ const styles = StyleSheet.create({
     letterSpacing: 2
   },
   bottomGradient: {
-    height: 300,
+    height: 400,
     width: '100%',
     zIndex: 3,
     width: 500,
     marginTop: -300,
+    bottom: 20
   },
   projectAvailable: {
     top: -85,
@@ -54,7 +40,8 @@ const styles = StyleSheet.create({
     color: 'rgba(56, 79, 125, .8)',
     fontSize: 13,
     letterSpacing: 1,
-    lineHeight: 16
+    lineHeight: 16,
+    fontFamily: 'Fjalla-One'
   },
   searchBar: {
     top: -100,
@@ -64,11 +51,15 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   searchBarText: {
-    marginLeft: 10
+    marginLeft: 10,
+    fontFamily: 'Fjalla-One'
   },
   searchBarContainer: {
     borderBottomWidth: 0
   },
+  buttonText: {
+    fontFamily: 'Fjalla-One'
+  }
 });
 
 export default styles;

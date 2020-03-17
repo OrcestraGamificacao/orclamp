@@ -4,10 +4,10 @@ const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
         color: '#384F7D',
-        fontSize: 16,
-        //width: 270,
+        fontSize: 18,
         lineHeight: 22,
-        fontFamily: 'sans-serif-light'
+        marginTop: 10,
+        paddingHorizontal: 10
     },
     animationContainer: {
         backgroundColor: '#F5F7FB',

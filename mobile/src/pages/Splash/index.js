@@ -5,6 +5,7 @@ import styles from './styles';
 
 const Splash = ({ navigation }) =>
 {
+
     useEffect(() => {
         setTimeout(() => {
             navigation.navigate('Main');

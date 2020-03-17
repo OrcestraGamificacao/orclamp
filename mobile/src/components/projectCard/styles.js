@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     labelText: {
         color: '#ffffff',
         textAlign: 'center',
-        fontSize: 10
+        fontSize: 10,
+        fontFamily: 'Fjalla-One',
     },
     labelView: {
         backgroundColor: 'rgba(122, 193, 78, .8)',
@@ -37,12 +38,14 @@ const styles = StyleSheet.create({
     projectName: {
         color: '#384F7D',
         fontSize: 17,
-        width: 100,
-        alignSelf: 'flex-end',
+        alignSelf: 'flex-start',
+        fontFamily: 'Fjalla-One',
+        paddingVertical: 5
     },
     ownerName: {
         fontSize: 13,
-        marginBottom: 10
+        marginBottom: 10,
+        fontFamily: 'Fjalla-One',
     }
 });
 
