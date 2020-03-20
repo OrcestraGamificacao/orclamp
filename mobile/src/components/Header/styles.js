@@ -5,19 +5,19 @@ const styles = StyleSheet.create({
         height: 250,
         width: 300,
         alignSelf: 'center',
-        top: -75,
+        top: -100,
         borderBottomLeftRadius: 1000,
         borderBottomRightRadius: 1000,
         transform: [{scaleX: 2}]
     },
     pageTitle: {
-        fontSize: 19,
+        fontSize: 20,
         color: '#ffffff',
         lineHeight: 22,
         fontFamily: 'Fjalla-One',
-        top: 150,
+        top: 175,
         alignSelf: 'center',
-        transform: [{scaleX: 1/2}]
+        transform: [{scaleX: 1/2}],
     },
 });
 

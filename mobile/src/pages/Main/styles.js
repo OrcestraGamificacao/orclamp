@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5F7FB'
   },
   projectList: {
-    top: -85,
+    top: -100,
     flex: 1,
   },
   projectHeight: {
@@ -23,18 +23,17 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 10, height: 10},
     shadowColor: 'black',
     shadowOpacity: .8,
-    letterSpacing: 2
   },
   bottomGradient: {
     height: 400,
     width: '100%',
     zIndex: 3,
     width: 500,
-    marginTop: -300,
-    bottom: 20
+    marginTop: -320,
+    bottom: 0
   },
   projectAvailable: {
-    top: -85,
+    top: -100,
     alignSelf: 'flex-start',
     left: 30,
     color: 'rgba(56, 79, 125, .8)',
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Fjalla-One'
   },
   searchBar: {
-    top: -100,
+    top: -125,
     width: 315,
     backgroundColor: '#ffffff',
     borderRadius: 8,
