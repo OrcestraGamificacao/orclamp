@@ -44,12 +44,10 @@ const styles = StyleSheet.create({
     width: '80%',
     backgroundColor: '#7AC14E',
   },
-  container_text: {
-    paddingTop: '5%',
-  },
-  last_message: {
+  button_create_account: {
     alignSelf: 'center',
-  },
+    paddingTop: '2%',
+  }
 });
 
 export default styles;
