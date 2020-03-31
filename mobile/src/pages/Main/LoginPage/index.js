@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { Button, Input } from 'react-native-elements';
 
 import styles from './styles';
@@ -28,12 +28,13 @@ function LoginPage() {
                 buttonStyle={styles.button_login}
                 title='SIGN IN'
         />
+        <TouchableOpacity
+          style={styles.button_create_account}
+          onPress={() => {}}
+        >
+          <Text>Novo aqui? Crie uma conta</Text>
+        </TouchableOpacity>
       </ View>
-      <View style={styles.container_text}>
-        <Text style={styles.last_message}>
-          Novo aqui? Crie uma conta.
-        </Text>
-      </View>
     </View>
   );
 }
