@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FiUpload } from 'react-icons/fi'
 
 import './styles.css';
 
 import logoImg from '../../assets/logo.png';
 
 export default function NewProject() {
+  const [image, setImage] = useState('');
+
   return (
     <div className="new-project-content">
       <div className="content">
@@ -31,8 +34,23 @@ export default function NewProject() {
             onChange={() => { }}
           />
 
+          <div className="upload-group">
+            <label for="upload">
+              <FiUpload size={16} color="#7AC14E" />
+              Imagem do Projeto
+            </label>
+            <input
+              id="upload"
+              type="file"
+              accept="image/*"
+              value={image}
+              onChange={(e) => setImage(e.target.value)}
+            />
+            <span>{image}</span>
+          </div>
+
           <button className="button" type="submit">
-            Próximo
+            PRÓXIMO
           </button>
 
         </form>
