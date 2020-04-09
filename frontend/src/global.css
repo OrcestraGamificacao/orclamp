@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+  font: 16px Fjalla One, sans-serif;
+  background: #F0F4FD;
+}
+
+input, button, textarea, span {
+  font: 16px Fjalla One, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}

@@ -4,9 +4,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import  Icon  from 'react-native-vector-icons/Ionicons';
 import * as Font from 'expo-font';
-
-import Splash from './pages/Splash';
 import Main from './pages/Main';
+import LoginPage from './pages/Main/LoginPage';
+import Splash from './pages/Splash';
 import Projects from './pages/Projects'
 
 import {Text} from 'react-native';

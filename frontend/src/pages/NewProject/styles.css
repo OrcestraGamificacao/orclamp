@@ -1,0 +1,122 @@
+.new-project-content {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-project-content .content {
+  width: 100%;
+  padding: 96px;
+  background: #F0F4FD;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-project-content section {
+  width: 100%;
+  max-width: 380px;
+}
+
+.new-project-content section img {
+  max-width: 300px;
+  max-height: 472px;
+  width: auto;
+  height: auto;
+}
+
+.new-project-content .content form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.new-project-content .content form h1 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: 90px;
+  font-size: 52px;
+  color: #445984;
+}
+
+.new-project-content .content form input.project,
+.new-project-content .content form input.technology {
+  width: 100%;
+  height: 60px;
+  color: #333;
+  margin-top: 32px;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.new-project-content .content form .upload-group {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label#upload {
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  width: 100%;
+  max-width: 190px;
+  height: 140px;
+  color: #7AC14E;
+  background-color: #fff;
+  padding: 6px 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label#upload.has-image {
+  border: 0;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.new-project-content .content form textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 140px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin-top: 32px;
+  line-height: 24px;
+}
+
+.new-project-content .content form button {
+  width: 100%;
+  min-width: 500px;
+  height: 60px;
+  background: #7AC14E;
+  border: none;
+  border-radius: 8px;
+  color: #FFF;
+  font-weight: 700;
+  margin-top: 32px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition: filter 0.2s;
+}
+
+.new-project-content .content form button:hover {
+  filter: brightness(90%);
+}
