@@ -4,8 +4,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import  Icon  from 'react-native-vector-icons/Ionicons';
 import * as Font from 'expo-font';
-import Main from './pages/Main';
+
 import Splash from './pages/Splash';
+import Main from './pages/Main';
+import Projects from './pages/Projects'
 
 import {Text} from 'react-native';
 
@@ -15,7 +17,9 @@ const Tab = createMaterialBottomTabNavigator();
 
 
 /* As telas deverão ser inseridas neste Navigator */
-const MainApp = () => (
+const MainApp = () => {
+
+  return (
   <Tab.Navigator
     shifting={false}
     initialRouteName="Feed"
@@ -30,7 +34,7 @@ const MainApp = () => (
           }}
         />
 
-        <Tab.Screen name="Meus Projetos" component={() => <Text>Meus projetos</Text>}
+        <Tab.Screen name="Meus Projetos" component={Projects}
           options={{
             tabBarLabel: 'Meus Projetos',
             tabBarIcon: ({color}) => (<Icon name="ios-paper" color={color} size={26} />)
@@ -49,7 +53,9 @@ const MainApp = () => (
           }}
         />
   </Tab.Navigator>
-);
+
+  )
+};
 
 
 
