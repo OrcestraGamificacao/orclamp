@@ -18,11 +18,13 @@ const styles = StyleSheet.create({
     width: 300,
     backgroundColor: '#7AC14E',
     borderRadius: 8,
-    bottom: 80,
     zIndex: 4,
     shadowOffset: {width: 10, height: 10},
     shadowColor: 'black',
     shadowOpacity: .8,
+    position: 'absolute',
+    bottom: 30,
+    left: -150
   },
   bottomGradient: {
     height: 400,
@@ -41,20 +43,6 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     lineHeight: 16,
     fontFamily: 'Fjalla-One'
-  },
-  searchBar: {
-    top: -125,
-    width: 315,
-    backgroundColor: '#ffffff',
-    borderRadius: 8,
-    paddingVertical: 5,
-  },
-  searchBarText: {
-    marginLeft: 10,
-    fontFamily: 'Fjalla-One'
-  },
-  searchBarContainer: {
-    borderBottomWidth: 0
   },
   buttonText: {
     fontFamily: 'Fjalla-One'

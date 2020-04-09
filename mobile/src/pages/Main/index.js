@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Button, Input } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/Ionicons';
 import Project from '../../components/projectCard';
 import Header from '../../components/Header';
+import SearchBar from '../../components/searchBar';
 
 import styles from './styles';
 
@@ -38,20 +39,10 @@ function Main() {
   return (
     <View style={styles.container}>
       <Header title="Projetos"/>
-      <Input
-          placeholder={'Procurar projeto'}
-          onChangeText={changeSearchText}
-          value={searchText}
-          containerStyle={styles.searchBar}
-          inputContainerStyle={styles.searchBarContainer}
-          inputStyle={styles.searchBarText}
-          leftIcon={
-            <Icon name='search'
-              size={20}
-              color='rgba(125,125,125, .5)'
-            />
-          }
-        />
+      <SearchBar placeholder="Procurar projeto"
+        changeSearchText={changeSearchText}
+        searchText={searchText}
+      />
       <Text style={styles.projectAvailable}>PROJETOS DISPONÍVEIS</Text>
       <View style={styles.projectHeight}>
         <FlatList
