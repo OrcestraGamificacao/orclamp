@@ -4,14 +4,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#F5F7FB'
+    backgroundColor: '#F5F7FB',
   },
   projectList: {
     top: -100,
     flex: 1,
   },
   projectHeight: {
-    height: 325
+    height: 325,
   },
   button: {
     height: 55,
@@ -19,12 +19,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#7AC14E',
     borderRadius: 8,
     zIndex: 4,
-    shadowOffset: {width: 10, height: 10},
+    shadowOffset: { width: 10, height: 10 },
     shadowColor: 'black',
-    shadowOpacity: .8,
+    shadowOpacity: 0.8,
     position: 'absolute',
     bottom: 30,
-    left: -150
+    left: -150,
   },
   bottomGradient: {
     height: 400,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     zIndex: 3,
     width: 500,
     marginTop: -320,
-    bottom: 0
+    bottom: 0,
   },
   projectAvailable: {
     top: -100,
@@ -42,11 +42,11 @@ const styles = StyleSheet.create({
     fontSize: 13,
     letterSpacing: 1,
     lineHeight: 16,
-    fontFamily: 'Fjalla-One'
+    fontFamily: 'Fjalla-One',
   },
   buttonText: {
-    fontFamily: 'Fjalla-One'
-  }
+    fontFamily: 'Fjalla-One',
+  },
 });
 
 export default styles;
