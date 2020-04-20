@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, FlatList } from 'react-native';
 import { Button } from 'react-native-elements';
-import Project from '../../components/projectCard';
+import Project from '../../components/ProjectCard';
 import Header from '../../components/Header';
-import SearchBar from '../../components/searchBar';
+import SearchBar from '../../components/SearchBar';
 
 import styles from './styles';
 

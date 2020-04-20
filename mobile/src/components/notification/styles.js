@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Fjalla-One',
     fontSize: 14,
     marginVertical: 5,
-    marginLeft: 65,
   },
   quit: {
     padding: 30,
@@ -24,8 +23,10 @@ const styles = StyleSheet.create({
     fontFamily: 'Fjalla-One',
     fontSize: 12,
     color: '#888888',
-    marginLeft: 65,
-    width: 150,
+    width: 200,
+  },
+  text: {
+    marginLeft: 20,
   },
 });
 

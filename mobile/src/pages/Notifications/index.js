@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, FlatList, Text } from 'react-native';
 import Header from '../../components/Header';
-import Notification from '../../components/notification';
+import Notification from '../../components/Notification';
 
 import styles from './styles';
 
@@ -30,7 +30,7 @@ const Notifications = () => {
   return (
     <View style={styles.container}>
       <Header title="Notificações" />
-      <Text style={styles.subtitle}>PROJETOS DISPONÍVEIS</Text>
+      <Text style={styles.subtitle}>NOTIFICAÇÕES</Text>
       <FlatList
         style={styles.list}
         keyExtractor={(item, index) => index.toString()}

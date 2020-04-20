@@ -21,7 +21,7 @@ const Description = (type, name) => {
 
 const Notification = ({ name, type }) => (
   <View style={styles.card}>
-    <View>
+    <View style={styles.text}>
       <Text style={styles.name}>{name}</Text>
       {Description(type, name)}
     </View>

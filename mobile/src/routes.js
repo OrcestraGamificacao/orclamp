@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import * as Font from 'expo-font';
 import { Text } from 'react-native';
 import Main from './pages/Main';
-import LoginPage from './pages/Main/LoginPage';
+import LoginPage from './pages/LoginPage';
 import Splash from './pages/Splash';
 import Projects from './pages/Projects';
 import Notifications from './pages/Notifications';
