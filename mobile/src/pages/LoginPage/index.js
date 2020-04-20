@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import {
+  View, Text, Image, TouchableOpacity,
+} from 'react-native';
 import { Button, Input } from 'react-native-elements';
 
 import styles from './styles';
@@ -8,7 +10,7 @@ function LoginPage() {
   return (
     <View style={styles.container}>
       <View style={styles.container_logo}>
-        <Image source={require('../../../../assets/Logo.png')} />
+        <Image source={require('../../../assets/Logo.png')} />
       </View>
       <View style={styles.container_input_data}>
         <Text style={styles.signin}>
@@ -22,11 +24,12 @@ function LoginPage() {
           Password
         </Text>
         <Input containerStyle={styles.input_password} placeholder="********" />
-      </ View>
+      </View>
       <View style={styles.container_button}>
-        <Button contanerStyle={styles.button_login}
-                buttonStyle={styles.button_login}
-                title='SIGN IN'
+        <Button
+          contanerStyle={styles.button_login}
+          buttonStyle={styles.button_login}
+          title="SIGN IN"
         />
         <TouchableOpacity
           style={styles.button_create_account}
@@ -34,7 +37,7 @@ function LoginPage() {
         >
           <Text>Novo aqui? Crie uma conta</Text>
         </TouchableOpacity>
-      </ View>
+      </View>
     </View>
   );
 }
