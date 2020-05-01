@@ -8,10 +8,12 @@
 }
 
 body {
-  font: 16px Fjalla One, sans-serif;
+  font-family: Fjalla One, sans-serif;
+  color: #384F7D;
   background: #F0F4FD;
 }
 
-input, button, textarea, span {
+input, textarea {
   font: 16px Fjalla One, sans-serif;
+  color: #333;
 }
