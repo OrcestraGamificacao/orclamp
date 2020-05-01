@@ -6,11 +6,12 @@ button {
   border-radius: 8px;
   color: #fff;
   font-weight: 700;
+  font-family: Fjalla One, sans-serif;
+  font-size: 18px;
   margin-top: 32px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
   line-height: 60px;
   cursor: pointer;
   transition: filter 0.2s;
