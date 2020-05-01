@@ -30,20 +30,17 @@
 }
 
 .card-content .info .names-group h1 {
-  color: #384F7D;
   font-size: 26px;
 }
 
 .card-content .info .names-group h2 {
   font-size: 18px;
-  color: #384F7D;
   margin-top: 6px;
   opacity: 0.8;
 }
 
 .card-content .info p {
   width: 100%;
-  color: #445984;
   margin-top: 30px;
 }
 
