@@ -1,0 +1,13 @@
+.content-projects {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-projects .body-content {
+  margin-top: 90px;
+}
