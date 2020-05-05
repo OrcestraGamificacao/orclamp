@@ -17,6 +17,32 @@
   border-radius: 30px;
 
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-project-content .content header .back-projects {
+  display: flex;
+  align-items: center;
+  color: #445984;
+  font-size: 18px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.new-project-content .content header .back-projects svg {
+  margin-right: 8px;
+}
+
+.new-project-content .content header h1 {
+  font-size: 52px;
+}
+
+.new-project-content .content body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
