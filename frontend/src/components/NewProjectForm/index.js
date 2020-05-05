@@ -33,7 +33,7 @@ export default function NewPtojectForm() {
   return (
     <div className="content-form-project">
       <form onSubmit={handleNext}>
-        <h1>Criar Projeto</h1>
+
         <input
           className="project"
           placeholder="Nome do Projeto"
