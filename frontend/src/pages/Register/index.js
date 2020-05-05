@@ -20,7 +20,7 @@ export default function Register() {
         <section>
           <h1>Bem vindo!</h1>
           <img src={logoImg} alt="Orclamp" />
-          <Link className="login-link" to="/login">
+          <Link className="login-link" to="/">
             Já tem uma conta? Login
             <FiLogIn size={30} color="#7AC14E" />
           </Link>
