@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import "./styles.css";
 
 import Button from "../../components/Button";
+import InputGroup from "../../components/InputGroup";
 
 export default function RegisterForm() {
   const [email, setEmail] = useState("");
   const [githubUsername, setGithubUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+
   return (
     <form id="register">
       <p>
@@ -16,37 +18,29 @@ export default function RegisterForm() {
         para projetos.
       </p>
 
-      <h1>Email</h1>
-      <input
-        className="email"
+      <InputGroup
+        title="Email"
         type="email"
-        required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <h1>Github username</h1>
-      <input
-        className="github-username"
-        required
+      <InputGroup
+        title="Github username"
         value={githubUsername}
         onChange={(e) => setGithubUsername(e.target.value)}
       />
 
-      <h1>Senha</h1>
-      <input
-        className="password"
+      <InputGroup
+        title="Senha"
         type="password"
-        required
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      <h1>Confirmar senha</h1>
-      <input
-        className="confirm-password"
+      <InputGroup
+        title="Confirmar senha"
         type="password"
-        required
         value={confirmPassword}
         onChange={(e) => setConfirmPassword(e.target.value)}
       />
