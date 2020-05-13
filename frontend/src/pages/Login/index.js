@@ -1,22 +1,23 @@
-import React from 'react';
+import React from "react";
+import "./styles.css";
 
-import './styles.css';
-
-import Logo from '../../assets/LogoRegister.png';
-
-import LoginForm from '../../components/LoginForm';
+import Logo from "../../assets/LogoRegister.png";
+import LoginForm from "../../components/LoginForm";
+import ContainerBackground from "../../components/ContainerBackground";
 
 export default function Login() {
   return (
-    <div className="login-content">
-      <div className="content">
-        <section>
-          <img src={Logo} alt="Orclamp" />
-          <h1>Orclamp</h1>
-        </section>
+    <ContainerBackground
+      body={
+        <div className="login-container">
+          <section>
+            <img src={Logo} alt="Orclamp" />
+            <h1>Orclamp</h1>
+          </section>
 
-        <LoginForm />
-      </div>
-    </div>
+          <LoginForm />
+        </div>
+      }
+    />
   );
 }

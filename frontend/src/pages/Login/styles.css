@@ -1,27 +1,12 @@
-.login-content {
+.login-container {
   width: 100%;
-  max-width: 1120px;
-  height: 100vh;
-  margin: 0 auto;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login-content .content {
-  width: 100%;
-  padding: 30px 50px;
-  background-color: #F0F4FD;
-  box-shadow: 0 0 100px rgba(56, 79, 125, 0.5);
-  border-radius: 30px;
-
-  display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-.login-content .content section {
+.login-container section {
   width: 100%;
   max-width: 380px;
 
@@ -31,14 +16,14 @@
   justify-content: center;
 }
 
-.login-content .content section img {
+.login-container section img {
   max-width: 300px;
   max-height: 472px;
   width: auto;
   height: auto;
 }
 
-.login-content .content section h1 {
+.login-container section h1 {
   font-size: 86px;
   color: #7AC14E;
   font-weight: lighter;

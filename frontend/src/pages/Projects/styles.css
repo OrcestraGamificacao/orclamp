@@ -1,4 +1,4 @@
-.content-projects {
+.projects-container {
   width: 100%;
   margin: 0 auto;
 
@@ -8,6 +8,6 @@
   justify-content: center;
 }
 
-.content-projects .body-content {
-  margin-top: 90px;
+.projects-container .body-content {
+  margin-top: 100px;
 }
