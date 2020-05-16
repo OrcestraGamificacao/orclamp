@@ -6,7 +6,7 @@ header#main-page {
   z-index: 1;
   padding-left: 50px;
   padding-right: 50px;
-  background: linear-gradient(10deg, #384F7D, #F0F4FD);
+  background: #384F7D;
   display: flex;
   justify-content: space-between;
 }
@@ -40,6 +40,7 @@ header#main-page .welcome-guide {
 header#main-page .welcome-guide h1 {
   font-size: 48px;
   font-weight: lighter;
+  color: #fff;
 }
 
 header#main-page .welcome-guide .create-project,
