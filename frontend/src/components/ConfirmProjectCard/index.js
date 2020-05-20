@@ -4,14 +4,12 @@ import "./styles.css";
 
 const ConfirmProjectCard = () => {
   const project = localStorage.getItem("project");
-  const techs = localStorage.getItem("techs");
+  const techs = localStorage.getItem("techs").split(", ");
   const description = localStorage.getItem("description");
   const image = localStorage.getItem("image");
 
-  const technology = techs.split(", ");
-
   return (
-    <div className="card-content">
+    <div className="confirm-project-card">
       <div className="img-block">
         <img src={image} alt="Logo Project" />
       </div>
@@ -25,7 +23,7 @@ const ConfirmProjectCard = () => {
         <p>{description}</p>
 
         <ul>
-          {technology.map((tech) => (
+          {techs.map((tech) => (
             <li className="tech">{tech}</li>
           ))}
         </ul>

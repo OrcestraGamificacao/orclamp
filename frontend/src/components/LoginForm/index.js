@@ -5,6 +5,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import "./styles.css";
 
 import Button from "../../components/Button";
+import InputGroup from "../../components/InputGroup";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -13,20 +14,16 @@ export default function LoginForm() {
     <form id="login">
       <h1>Login</h1>
 
-      <h2>Email</h2>
-      <input
-        className="email"
+      <InputGroup
+        title="Email"
         type="email"
-        required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <h2>Senha</h2>
-      <input
-        className="password"
+      <InputGroup
+        title="Senha"
         type="password"
-        required
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />

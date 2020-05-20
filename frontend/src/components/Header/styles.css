@@ -1,47 +1,50 @@
-header {
+header#main-page {
   width: 100%;
-  margin-top: 42px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #384F7D;
   display: flex;
   justify-content: space-between;
 }
 
-header .logo-group {
-  margin-left: 80px;
+header#main-page .logo-group {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-header .logo-group img {
-  max-width: 100px;
-  max-height: 100px;
+header#main-page .logo-group img {
+  max-width: 80px;
+  max-height: 80px;
   width: auto;
   height: auto;
 }
 
-header .logo-group h1 {
+header#main-page .logo-group h1 {
   margin-left: 10px;
   font-size: 48px;
   color: #7AC14E;
   font-weight: lighter;
 }
 
-header .welcome-guide {
-  margin-right: 80px;
-}
-
-header .welcome-guide .menu {
+header#main-page .welcome-guide {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-header .welcome-guide .menu h1 {
+header#main-page .welcome-guide h1 {
   font-size: 48px;
   font-weight: lighter;
+  color: #fff;
 }
 
-header .welcome-guide .menu .create-project,
-header .welcome-guide .menu .logout {
+header#main-page .welcome-guide .create-project,
+header#main-page .welcome-guide .logout {
   width: 60px;
   height: 60px;
   margin-left: 18px;
@@ -50,13 +53,4 @@ header .welcome-guide .menu .logout {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-header .welcome-guide input {
-  width: 100%;
-  height: 50px;
-  margin-top: 32px;
-  border: 1px solid #dcdce6;
-  border-radius: 8px;
-  padding: 0 24px;
 }

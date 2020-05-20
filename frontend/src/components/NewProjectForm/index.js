@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { FiUpload } from "react-icons/fi";
 
 import Button from "../../components/Button";
+import InputGroup from "../InputGroup";
 
 import "./styles.css";
 
@@ -31,30 +32,31 @@ export default function NewPtojectForm() {
   }
 
   return (
-    <div className="content-form-project">
-      <form onSubmit={handleNext}>
+    <div className="new-project-form">
+      <h1>Criar Projeto</h1>
 
-        <input
-          className="project"
-          placeholder="Nome do Projeto"
+      <form onSubmit={handleNext}>
+        <InputGroup
+          title="Nome do Projeto"
           value={project}
           onChange={(e) => setProject(e.target.value)}
         />
 
-        <input
-          className="technology"
-          placeholder="Tecnologias"
+        <InputGroup
+          title="Tecnologias"
           value={techs}
           onChange={(e) => setTechs(e.target.value)}
         />
 
-        <textarea
-          placeholder="Descrição"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
+        <div className="description-image">
+          <div className="textarea-group">
+            <h2>Descrição</h2>
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
 
-        <div className="upload-group">
           <label
             id="upload"
             style={{ backgroundImage: `url(${preview})` }}
@@ -65,8 +67,8 @@ export default function NewPtojectForm() {
               accept="image/*"
               onChange={(e) => setImage(e.target.files[0])}
             />
-            {image ? "" : <FiUpload size={30} color="#7AC14E" />}
-            {image ? "" : "Imagem do Projeto"}
+            {image ? "" : <FiUpload size={30} color="#384F7D" />}
+            {image ? "" : "Imagem"}
           </label>
         </div>
 
