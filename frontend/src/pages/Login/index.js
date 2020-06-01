@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.css";
-
 import Logo from "../../assets/LogoRegister.png";
-import LoginForm from "../../components/LoginForm";
+
 import ContainerBackground from "../../components/ContainerBackground";
+import LoginForm from "../../components/LoginForm";
 
 export default function Login() {
   return (
@@ -11,8 +11,8 @@ export default function Login() {
       body={
         <div className="login-container">
           <section>
-            <img src={Logo} alt="Orclamp" />
             <h1>Orclamp</h1>
+            <img src={Logo} alt="Orclamp" />
           </section>
 
           <LoginForm />

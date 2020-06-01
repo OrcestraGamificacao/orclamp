@@ -1,10 +1,9 @@
 import React from "react";
+import "./styles.css";
 
-import NewProjectForm from "../../components/NewProjectForm";
 import ContainerBackground from "../../components/ContainerBackground";
 import SectionLogoLink from "../../components/SectionLogoLink";
-
-import "./styles.css";
+import NewProjectForm from "../../components/NewProjectForm";
 
 export default function NewProject() {
   return (
@@ -12,7 +11,7 @@ export default function NewProject() {
       body={
         <div className="new-project-container">
           <SectionLogoLink
-            titleLink="Voltar para página incial"
+            titleLink="Voltar para página inicial"
             page="/projects"
           />
 

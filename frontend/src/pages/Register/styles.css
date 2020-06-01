@@ -1,50 +1,46 @@
 .register-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .register-container .line-division {
-  width: 6px;
-  height: 600px;
-  background-color: #7AC14E;
-  opacity: 0.5;
+    width: 6px;
+    height: 600px;
+    background-color: #7ac14e;
+    opacity: 0.5;
 }
 
 .register-container section {
-  width: 100%;
-  max-width: 380px;
+    width: 100%;
+    max-width: 380px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .register-container section h1 {
-  font-size: 70px;
-  margin-bottom: 80px;
+    font-size: 70px;
+    margin-bottom: 80px;
 }
 
 .register-container section img {
-  max-width: 300px;
-  max-height: 472px;
-  width: auto;
-  height: auto;
+    max-width: 300px;
+    max-height: 472px;
+    width: auto;
+    height: auto;
 }
 
 .register-container section .login-link {
-  margin-top: 80px;
-  font-size: 24px;
-  text-decoration: none;
-  color: #384F7D;
-  opacity: 0.9;
+    margin-top: 80px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #384f7d;
+    opacity: 0.9;
 
-  display: flex;
-  align-items: center;
-}
-
-.register-container section .login-link svg {
-  margin-left: 8px;
+    display: flex;
+    align-items: center;
 }

@@ -6,7 +6,7 @@ header#main-page {
   z-index: 1;
   padding-left: 50px;
   padding-right: 50px;
-  background: #384F7D;
+  background: #384f7d;
   display: flex;
   justify-content: space-between;
 }
@@ -27,7 +27,7 @@ header#main-page .logo-group img {
 header#main-page .logo-group h1 {
   margin-left: 10px;
   font-size: 48px;
-  color: #7AC14E;
+  color: #7ac14e;
   font-weight: lighter;
 }
 
@@ -43,13 +43,13 @@ header#main-page .welcome-guide h1 {
   color: #fff;
 }
 
-header#main-page .welcome-guide .create-project,
-header#main-page .welcome-guide .logout {
+header#main-page .welcome-guide .button {
   width: 60px;
   height: 60px;
   margin-left: 18px;
-  background-color: #7AC14E;
+  background-color: #7ac14e;
   border-radius: 8px;
+
   display: flex;
   align-items: center;
   justify-content: center;

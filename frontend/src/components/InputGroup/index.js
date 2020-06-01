@@ -1,16 +1,11 @@
 import React from "react";
 import "./styles.css";
 
-const InputGroup = ({ title, value, onChange, type }) => {
+const InputGroup = ({ title, type, value, onChange }) => {
   return (
     <div className="group-container">
       <h2>{title}</h2>
-      <input
-        type={type}
-        required
-        value={value}
-        onChange={onChange}
-      />
+      <input type={type} required value={value} onChange={onChange} />
     </div>
   );
 };

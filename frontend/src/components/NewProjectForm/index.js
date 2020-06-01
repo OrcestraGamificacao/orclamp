@@ -1,18 +1,15 @@
 import React, { useState, useMemo } from "react";
-import { useHistory } from "react-router-dom";
-
-import { FiUpload } from "react-icons/fi";
-
+import { useHistory } from 'react-router-dom';
+import InputGroup from "../../components/InputGroup";
 import Button from "../../components/Button";
-import InputGroup from "../InputGroup";
-
+import { FiUpload } from "react-icons/fi";
 import "./styles.css";
 
-export default function NewPtojectForm() {
-  const [image, setImage] = useState(null);
+const NewProjectForm = () => {
   const [project, setProject] = useState("");
   const [techs, setTechs] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage] = useState(null);
 
   const preview = useMemo(() => {
     return image ? URL.createObjectURL(image) : null;
@@ -20,9 +17,7 @@ export default function NewPtojectForm() {
 
   const history = useHistory();
 
-  function handleNext(e) {
-    e.preventDefault();
-
+  function handleNext() {
     localStorage.setItem("project", project);
     localStorage.setItem("techs", techs);
     localStorage.setItem("description", description);
@@ -67,7 +62,7 @@ export default function NewPtojectForm() {
               accept="image/*"
               onChange={(e) => setImage(e.target.files[0])}
             />
-            {image ? "" : <FiUpload size={30} color="#384F7D" />}
+            {image ? "" : <FiUpload size={30} color="#384f7d" />}
             {image ? "" : "Imagem"}
           </label>
         </div>
@@ -76,4 +71,6 @@ export default function NewPtojectForm() {
       </form>
     </div>
   );
-}
+};
+
+export default NewProjectForm;

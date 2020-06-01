@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-
 import "./styles.css";
+import InputGroup from "../InputGroup";
+import Button from "../Button";
 
-import Button from "../../components/Button";
-import InputGroup from "../../components/InputGroup";
-
-export default function RegisterForm() {
+const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [githubUsername, setGithubUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
   return (
     <form id="register">
       <p>
@@ -24,20 +21,17 @@ export default function RegisterForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-
       <InputGroup
         title="Github username"
         value={githubUsername}
         onChange={(e) => setGithubUsername(e.target.value)}
       />
-
       <InputGroup
         title="Senha"
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-
       <InputGroup
         title="Confirmar senha"
         type="password"
@@ -48,4 +42,6 @@ export default function RegisterForm() {
       <Button text="CADASTRAR" />
     </form>
   );
-}
+};
+
+export default RegisterForm;

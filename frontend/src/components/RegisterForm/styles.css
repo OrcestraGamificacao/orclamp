@@ -1,6 +1,7 @@
 form#register {
   width: 100%;
   max-width: 450px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

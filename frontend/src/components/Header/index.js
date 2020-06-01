@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiPlus, FiLogOut } from "react-icons/fi";
-
 import "./styles.css";
 
-import Logo from "../../assets/LogoRegister.png";
+import Logo from '../../assets/LogoRegister.png';
 
-export default function Header() {
+const Header = () => {
   return (
     <header id="main-page">
       <div className="logo-group">
@@ -17,14 +16,16 @@ export default function Header() {
       <div className="welcome-guide">
         <h1>Bem vindo(a), Fellipe!</h1>
 
-        <Link className="create-project" to="/project/new">
+        <Link className="button" to="/project/new">
           <FiPlus size={36} color="#fff" />
         </Link>
 
-        <Link className="logout" to="/">
+        <Link className="button" to="/">
           <FiLogOut size={36} color="#fff" />
         </Link>
       </div>
     </header>
   );
-}
+};
+
+export default Header;

@@ -1,28 +1,29 @@
 .logo-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
 }
 
 .logo-link .back-projects {
-  color: #445984;
-  font-size: 18px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  display: flex;
-  align-items: center;
-  align-self: flex-start;
+    color: #445984;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
 }
 
 .logo-link .back-projects svg {
-  margin-right: 8px;
+    margin-right: 8px;
 }
 
-.logo-link  img {
-  max-width: 300px;
-  max-height: 472px;
-  width: auto;
-  height: auto;
-  margin-top: 50px;
+.logo-link img {
+    max-width: 300px;
+    max-height: 472px;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
 }

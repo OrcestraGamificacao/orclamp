@@ -1,12 +1,11 @@
 import React from "react";
-
 import "./styles.css";
 
 import ImgProject from "../../assets/project.png";
 import Avatar from "../../assets/avatar.jpeg";
 import Button from "../../components/Button";
 
-function ProjectCard() {
+const ProjectCard = () => {
   const data = [
     {
       id: 1,
@@ -24,7 +23,7 @@ function ProjectCard() {
       title: "Plataforma Educacional Gamificada 2",
       name: "Fellipe Araujo",
       avatar: Avatar,
-      technology: ["ReactJS", "Node.js", "Javascript"],
+      technology: ["ReactJS", "React Native", "Node.js"],
       description:
         "Plataforma web em react em que o professor poderá disponibilizar trechos de contos para seus alunos e os alunos acumulariam pontos para passar de níveis...",
     },
@@ -34,11 +33,12 @@ function ProjectCard() {
       title: "Plataforma Educacional Gamificada 3",
       name: "Fellipe Araujo",
       avatar: Avatar,
-      technology: ["ReactJS", "Node.js", "Javascript"],
+      technology: ["ReactJS", "React Native", "Node.js"],
       description:
         "Plataforma web em react em que o professor poderá disponibilizar trechos de contos para seus alunos e os alunos acumulariam pontos para passar de níveis...",
     },
   ];
+
   return data.map((project) => (
     <div className="project-card">
       <img src={project.logo} alt="Logo Project" />
@@ -58,6 +58,6 @@ function ProjectCard() {
       </div>
     </div>
   ));
-}
+};
 
 export default ProjectCard;

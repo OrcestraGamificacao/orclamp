@@ -1,31 +1,32 @@
 .login-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .login-container section {
-  width: 100%;
-  max-width: 380px;
+    width: 100%;
+    max-width: 380px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-container section img {
-  max-width: 300px;
-  max-height: 472px;
-  width: auto;
-  height: auto;
+    max-width: 300px;
+    max-height: 472px;
+    width: auto;
+    height: auto;
 }
 
 .login-container section h1 {
-  font-size: 86px;
-  color: #7AC14E;
-  font-weight: lighter;
-  margin-top: 32px;
+    font-size: 86px;
+    color: #7ac14e;
+    font-weight: lighter;
+    margin-top: 32px;
 }

@@ -1,9 +1,7 @@
 import React from "react";
-
 import "./styles.css";
-
-import ProjectCard from '../../components/ProjectCard';
 import Header from '../../components/Header';
+import ProjectCard from '../../components/ProjectCard';
 
 export default function Projects() {
   return (

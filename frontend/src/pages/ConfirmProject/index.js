@@ -1,11 +1,9 @@
 import React from "react";
-
-import ConfirmProjectCard from "../../components/ConfirmProjectCard";
-import Button from "../../components/Button";
+import "./styles.css";
 import ContainerBackground from "../../components/ContainerBackground";
 import SectionLogoLink from "../../components/SectionLogoLink";
-
-import "./styles.css";
+import ConfirmProjectCard from "../../components/ConfirmProjectCard";
+import Button from "../../components/Button";
 
 export default function ConfirmProject() {
   return (
@@ -22,7 +20,7 @@ export default function ConfirmProject() {
 
             <ConfirmProjectCard />
 
-            <Button text="ADICIONAR PROJETO" onClick={() => {}} />
+            <Button text="ADICIONAR PROJETO" />
           </div>
         </div>
       }

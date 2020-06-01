@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Fjalla One, sans-serif;
-  color: #384F7D;
-  background: #F0F4FD;
+    font-family: Fjalla One, sans-serif;
+    color: #384F7D;
+    background:#F0F4FD;
 }
 
 input, textarea {
-  font: 16px Fjalla One, sans-serif;
-  color: #333;
+    font: 16px Fjalla One, sans-serif;
+    color: #333;
 }

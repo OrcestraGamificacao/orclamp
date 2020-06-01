@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FiArrowRight } from 'react-icons/fi';
-
 import "./styles.css";
-
-import Button from "../../components/Button";
-import InputGroup from "../../components/InputGroup";
+import { Link } from "react-router-dom";
+import InputGroup from "../InputGroup";
+import Button from "../Button";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -28,11 +25,10 @@ export default function LoginForm() {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      <Button text="LOGAR" />
+      <Button text="Logar" />
 
       <Link className="register-link" to="/register">
-        Novo aqui? Cadastre-se
-        <FiArrowRight size={30} color="#7AC14E" />
+          Novo aqui? Cadastra-se
       </Link>
     </form>
   );

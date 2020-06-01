@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./styles.css";
 
 const ConfirmProjectCard = () => {
@@ -7,12 +6,9 @@ const ConfirmProjectCard = () => {
   const techs = localStorage.getItem("techs").split(", ");
   const description = localStorage.getItem("description");
   const image = localStorage.getItem("image");
-
   return (
     <div className="confirm-project-card">
-      <div className="img-block">
-        <img src={image} alt="Logo Project" />
-      </div>
+      <img src={image} alt="Logo Project" />
 
       <div className="info">
         <div className="names-group">

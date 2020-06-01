@@ -1,5 +1,6 @@
 .confirm-project-container {
   width: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,6 +11,7 @@
   width: 100%;
   max-width: 450px;
   margin-left: 96px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;

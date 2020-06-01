@@ -1,8 +1,7 @@
 import React from "react";
-
 import "./styles.css";
 
-const Button = ({ text, onClick }) => {
+const Button = ({ onClick, text }) => {
   return (
     <button id="general" type="submit" onClick={onClick}>
       {text}
